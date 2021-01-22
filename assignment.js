@@ -1,35 +1,27 @@
 
 
 
-
-
-
-// 1 .Express kilometers in meter.
-
-function KilometerToMeter(numberOfKilometer) // Set parameter
-{
+// 1 .Kilometer To Meter...
+function kilometerToMeter(numberOfKilometer) {
     result = numberOfKilometer * 1000;
     return result;
 }
 var meter = kilometerToMeter(8);
 console.log(meter);
 
-// 2 .The sum of the three products is watch, mobile, laptop..
-
-function budgetCalculator(watch, phone, laptop) // Set parameter
-{
-    var result = watch * 50 + phone * 100 + laptop * 500;
+// 2 .Budget of three products ..
+function budgetCalculator(watch,phone,laptop){
+    var result = watch*50 + phone*100 + laptop*500;
     return result;
 }
 
-var totalCost = budgetCalculator(5, 4, 2);
+var totalCost = budgetCalculator(2,2,2);
 console.log(totalCost);
 
 
-// 3 .Account of a hotel..
+// 3 . A hotel daily cost.. 
 
-function hotelCost(perDay)  // Set parameter
-{
+function hotelCost(perDay) {
     var dayCost = 0;
     if (perDay <= 10) {
         dayCost = perDay * 100;
@@ -40,18 +32,18 @@ function hotelCost(perDay)  // Set parameter
         var secondpart = remaining * 80;
         dayCost = firstpart + secondpart;
     }
-    else if (21 <= perDay) {
-        dayCost = 50 * perDay;
+    else if (21<=perDay) {
+         dayCost = 50 * perDay;
     }
     return dayCost;
 }
-var totalDayCost = hotelCost(30);
+var totalDayCost = hotelCost(10);
 console.log(totalDayCost);
 
-// 4 .Finding longest string in array
 
-function megaFriend(friendList) // Set parameter 
-{
+// 4 . Finding the lagest String..
+
+function megaFriend(friendList) {
     var lgth = 0;
     var largest;
     for (var i = 0; i < friendList.length; i++) {
